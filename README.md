@@ -1,3 +1,5 @@
+## Fork of https://github.com/BytemarkHosting/docker-webdav
+
 ## Supported tags
 
 * [`2.4`, `latest` (*2.4/Dockerfile*)](https://github.com/BytemarkHosting/docker-webdav/blob/master/2.4/Dockerfile)
@@ -65,7 +67,7 @@ docker run --restart always -v /srv/dav:/var/lib/dav \
 
 ```
 
-If you bind mount a certificate chain to `/cert.pem` and a private key to `/privkey.pem`, the container will use that instead!
+If you bind mount a certificate chain to `/cert.pem` and a private key to `/privkey.pem`, and a chain certs to `chain.pem` the container will use that instead!
 
 ### Authenticate multiple clients
 
