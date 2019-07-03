@@ -71,6 +71,8 @@ If you bind mount a certificate chain to `/cert.pem` and a private key to `/priv
 
 ### Authenticate multiple clients
 
+Methods `PUT DELETE MKCOL COPY MOVE XPROPFIND` are required auth, but `GET` has no auth.
+
 Specifying `USERNAME` and `PASSWORD` only supports a single user. If you want to have lots of different logins for various users, bind mount your own file to `/user.passwd` and the container will use that instead.
 
 If using `Basic` authentication, run the following commands:
